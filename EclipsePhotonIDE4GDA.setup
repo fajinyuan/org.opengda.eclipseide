@@ -280,7 +280,7 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         option="-Doomph.redirection.ide4gda"
-        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//Ide4gda.setup->${git.clone.ide4gda.location|uri}//Ide4gda.setup"
+        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//EclipsePhotonIDE4GDA.setup->${git.clone.ide4gda.location|uri}//EclipsePhotonIDE4GDA.setup"
         vm="true">
       <description>Set an Oomph redirection system property to redirect the logical location of this setup to its physical location in the Git clone.</description>
     </setupTask>
@@ -289,7 +289,7 @@
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
   <description>
-    ide4gda provides an Eclipse IDE for GDA development.
+    ide4gda provides an Eclipse Photon-based IDE for GDA development.
     It contains a list of extra plugins required for GDA development using eclipse RCP IDE
   </description>
 </setup:Project>

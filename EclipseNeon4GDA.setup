@@ -224,7 +224,7 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         option="-Doomph.redirection.ide4gda"
-        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//GDAIDE.setup->${git.clone.ide4gda.location|uri}//GDAIDE.setup"
+        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//EclipseNeon4GDA.setup->${git.clone.ide4gda.location|uri}//EclipseNeon4GDAsetup"
         vm="true">
       <description>Set an Oomph redirection system property to redirect the logical location of this setup to its physical location in the Git clone.</description>
     </setupTask>
@@ -232,5 +232,5 @@
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
-  <description>Fajin's eclipse IDE product for GDA developement</description>
+  <description>Fajin's eclipse neon-based IDE product for GDA developement</description>
 </setup:Project>
