@@ -78,8 +78,6 @@
     <requirement
         name="org.eclipse.egit.source.feature.group"/>
     <requirement
-        name="org.eclipse.egit.gitflow.feature.feature.group"/>
-    <requirement
         name="org.eclipse.jgit.pgm.feature.group"/>
     <requirement
         name="org.eclipse.jgit.pgm.source.feature.group"/>
