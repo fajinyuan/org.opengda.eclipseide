@@ -223,14 +223,10 @@
       label="Master">
     <setupTask
         xsi:type="setup:EclipseIniTask"
-        disabled="true"
-        option="-Doomph.redirection.gda.eclipseide"
-        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide/master/.../home/GDAIDE.setup->${git.clone.gda.eclipseide.location|uri}/.../home/GDAIDE.setup"
+        option="-Doomph.redirection.ide4gda"
+        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//GDAIDE.setup->${git.clone.ide4gda.location|uri}//GDAIDE.setup"
         vm="true">
-      <description>
-        Set an Oomph redirection system property to redirect the logical location of this setup to its physical location in the Git clone.
-        Before enabling this task, replace '...' with the repository path of this setup's containing project.
-      </description>
+      <description>Set an Oomph redirection system property to redirect the logical location of this setup to its physical location in the Git clone.</description>
     </setupTask>
   </stream>
   <logicalProjectContainer
