@@ -50,15 +50,11 @@
     <requirement
         name="org.eclipse.buckminster.core.feature.feature.group"/>
     <requirement
-        name="org.eclipse.buckminster.git.feature.feature.group"/>
-    <requirement
         name="org.eclipse.buckminster.pde.feature.feature.group"/>
     <requirement
         name="org.eclipse.buckminster.core.source.feature.feature.group"/>
     <requirement
         name="org.python.pydev.mylyn.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.buckminster.git.source.feature.feature.group"/>
     <requirement
         name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
     <requirement
