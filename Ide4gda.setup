@@ -92,13 +92,81 @@
     <requirement
         name="org.springframework.ide.eclipse.mylyn.feature.feature.group"/>
     <requirement
+        name="com.atlassian.connector.eclipse.feature.group"/>
+    <requirement
         name="org.eclipse.egerrit.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.emf.sdk.feature.group"/>
+    <requirement
+        name="org.eclipse.emf.ecoretools.sdk.feature.group"/>
+    <requirement
+        name="org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.emf.ecore.xcore.sdk.feature.group"/>
+    <requirement
+        name="org.eclipse.emf.ecp.sdk.feature.feature.group"/>
     <requirement
         name="org.eclipse.egerrit.feature.source.feature.group"/>
     <requirement
+        name="org.eclipse.tracecompass.gdbtrace.feature.group"/>
+    <requirement
+        name="org.eclipse.eclemma.feature.feature.group"/>
+    <requirement
         name="org.eclipse.buckminster.pde.source.feature.feature.group"/>
     <requirement
+        name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+    <requirement
         name="org.python.pydev.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.rcp.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.rcp.doc.user.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.swt.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.core.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.core.ui.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.layout.group.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.core.java.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.ecf.core.feature.group"/>
+    <requirement
+        name="org.eclipse.wb.doc.user.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.java_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.context_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.git.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.pde_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.ide_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.hudson.feature.group"/>
+    <requirement
+        name="org.eclipse.linuxtools.man.feature.group"/>
+    <requirement
+        name="org.eclipse.swt.tools.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.e4.core.tools.feature.source.feature.group"/>
+    <requirement
+        name="org.eclipse.sdk.examples.source.feature.group"/>
+    <requirement
+        name="org.eclipse.userstorage.feature.group"/>
+    <requirement
+        name="org.eclipse.userstorage.sdk.feature.group"/>
     <repository
         url="http://findbugs.cs.umd.edu/eclipse/"/>
     <repository
@@ -115,6 +183,10 @@
         url="http://download.eclipse.org/egit/updates"/>
     <repository
         url="http://download.eclipse.org/egerrit/updates/release/959"/>
+    <repository
+        url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7"/>
+    <repository
+        url="http://download.eclipse.org/releases/photon"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
