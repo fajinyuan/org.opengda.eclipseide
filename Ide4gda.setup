@@ -187,6 +187,8 @@
         url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7"/>
     <repository
         url="http://download.eclipse.org/releases/photon"/>
+    <repository
+        url="http://download.eclipse.org/eclipse/updates/4.8/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
