@@ -48,25 +48,37 @@
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
+        name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
+    <requirement
         name="org.eclipse.buckminster.core.feature.feature.group"/>
     <requirement
         name="org.eclipse.buckminster.pde.feature.feature.group"/>
     <requirement
         name="org.eclipse.buckminster.core.source.feature.feature.group"/>
     <requirement
-        name="org.python.pydev.mylyn.feature.feature.group"/>
-    <requirement
-        name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
-    <requirement
-        name="org.springframework.ide.eclipse.feature.feature.group"/>
-    <requirement
-        name="org.python.pydev.feature.source.feature.group"/>
+        name="org.eclipse.buckminster.pde.source.feature.feature.group"/>
     <requirement
         name="org.springsource.ide.eclipse.dashboard.feature.group"/>
     <requirement
-        name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
+    <requirement
+        name="org.springframework.ide.eclipse.mylyn.feature.feature.group"/>
+    <requirement
+        name="org.springframework.ide.eclipse.feature.feature.group"/>
     <requirement
         name="org.springframework.ide.eclipse.aop.feature.feature.group"/>
+    <requirement
+        name="org.python.pydev.mylyn.feature.feature.group"/>
+    <requirement
+        name="org.python.pydev.feature.source.feature.group"/>
+    <requirement
+        name="org.python.pydev.feature.feature.group"/>
     <requirement
         name="org.eclipse.egit.feature.group"/>
     <requirement
@@ -84,15 +96,9 @@
     <requirement
         name="org.eclipse.jgit.feature.group"/>
     <requirement
-        name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-    <requirement
-        name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-    <requirement
-        name="org.springframework.ide.eclipse.mylyn.feature.feature.group"/>
-    <requirement
         name="com.atlassian.connector.eclipse.feature.group"/>
+    <requirement
+        name="org.eclipse.egerrit.feature.source.feature.group"/>
     <requirement
         name="org.eclipse.egerrit.feature.feature.group"/>
     <requirement
@@ -106,17 +112,11 @@
     <requirement
         name="org.eclipse.emf.ecp.sdk.feature.feature.group"/>
     <requirement
-        name="org.eclipse.egerrit.feature.source.feature.group"/>
-    <requirement
         name="org.eclipse.tracecompass.gdbtrace.feature.group"/>
     <requirement
         name="org.eclipse.eclemma.feature.feature.group"/>
     <requirement
-        name="org.eclipse.buckminster.pde.source.feature.feature.group"/>
-    <requirement
         name="org.eclipse.wst.xml_ui.feature.feature.group"/>
-    <requirement
-        name="org.python.pydev.feature.feature.group"/>
     <requirement
         name="org.eclipse.wb.rcp.feature.feature.group"/>
     <requirement
@@ -132,9 +132,9 @@
     <requirement
         name="org.eclipse.wb.core.java.feature.feature.group"/>
     <requirement
-        name="org.eclipse.ecf.core.feature.group"/>
-    <requirement
         name="org.eclipse.wb.doc.user.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.ecf.core.feature.group"/>
     <requirement
         name="org.eclipse.mylyn.java_feature.feature.group"/>
     <requirement
@@ -167,6 +167,10 @@
         name="org.eclipse.userstorage.feature.group"/>
     <requirement
         name="org.eclipse.userstorage.sdk.feature.group"/>
+    <requirement
+        name="org.eclipse.dltk.sh.feature.group"/>
+    <requirement
+        name="de.anbos.eclipse.logviewer.feature.feature.group"/>
     <repository
         url="http://findbugs.cs.umd.edu/eclipse/"/>
     <repository
@@ -189,6 +193,10 @@
         url="http://download.eclipse.org/releases/photon"/>
     <repository
         url="http://download.eclipse.org/eclipse/updates/4.8/"/>
+    <repository
+        url="jar:file:/dls_sw/dasc/eclipse-pluins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
+    <repository
+        url="http://download.eclipse.org/technology/dltk/updates-dev/latest/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
