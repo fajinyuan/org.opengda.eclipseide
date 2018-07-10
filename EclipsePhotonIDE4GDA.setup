@@ -194,10 +194,28 @@
     <repository
         url="http://download.eclipse.org/eclipse/updates/4.8/"/>
     <repository
-        url="jar:file:/dls_sw/dasc/eclipse-pluins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
-    <repository
         url="http://download.eclipse.org/technology/dltk/updates-dev/latest/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      filter="(osgi.os=linux)"
+      name="Linux">
+    <setupTask
+        xsi:type="setup.p2:P2Task">
+      <repository
+          url="jar:file:/dls_sw/dasc/eclipse-pluins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
+    </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      filter="(osgi.os=windows)"
+      name="Windows">
+    <setupTask
+        xsi:type="setup.p2:P2Task">
+      <repository
+          url="jar:file:W:/dasc/eclipse-pluins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="git:GitCloneTask"
