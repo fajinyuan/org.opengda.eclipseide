@@ -214,7 +214,7 @@
     <setupTask
         xsi:type="setup.p2:P2Task">
       <repository
-          url="jar:file:W:\dasc\eclipse-pluins\de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
+          url="jar:file:W:\\dasc\\eclipse-pluins\\de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
     </setupTask>
   </setupTask>
   <setupTask
