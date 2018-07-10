@@ -209,7 +209,7 @@
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
-      filter="(osgi.os=windows)"
+      filter="(osgi.os=win32)"
       name="Windows">
     <setupTask
         xsi:type="setup.p2:P2Task">
