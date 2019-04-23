@@ -14,6 +14,12 @@
     name="ide4gda"
     label="ide4gda">
   <setupTask
+      xsi:type="setup:CompoundTask"
+      name="User Preferences">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/UserPreferences"/>
+  </setupTask>
+  <setupTask
       xsi:type="jdt:JRETask"
       version="JavaSE-1.8"
       location="${jre.location-1.8}"
@@ -176,23 +182,23 @@
     <repository
         url="https://rherrmann.github.io/gonsole/repository/"/>
     <repository
-        url="http://download.eclipse.org/tools/buckminster/updates-4.5"/>
+        url="jar:file:/dls_sw/dasc/eclipse-tools-plugins/org.eclipse.buckminster.site.eclipse_1.7.0.v20160301-1230.zip!/"/>
     <repository
         url="http://pydev.org/updates"/>
     <repository
-        url="http://dist.springsource.com/release/TOOLS/update/e4.8"/>
+        url="https://download.springsource.com/release/TOOLS/update/e4.11/"/>
     <repository
         url="http://download.eclipse.org/recommenders/updates/stable/"/>
     <repository
         url="http://download.eclipse.org/egit/updates"/>
     <repository
-        url="http://download.eclipse.org/egerrit/updates/release/959"/>
+        url="http://download.eclipse.org/egerrit/updates/release/967"/>
     <repository
         url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7"/>
     <repository
         url="http://download.eclipse.org/releases/photon"/>
     <repository
-        url="http://download.eclipse.org/eclipse/updates/4.8/"/>
+        url="http://download.eclipse.org/eclipse/updates/4.11/"/>
     <repository
         url="http://download.eclipse.org/technology/dltk/updates-dev/latest/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
@@ -204,7 +210,7 @@
     <setupTask
         xsi:type="setup.p2:P2Task">
       <repository
-          url="jar:file:/dls_sw/dasc/eclipse-pluins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
+          url="jar:file:/dls_sw/dasc/eclipse-tools-plugins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
     </setupTask>
   </setupTask>
   <setupTask
@@ -214,7 +220,7 @@
     <setupTask
         xsi:type="setup.p2:P2Task">
       <repository
-          url="jar:file:W:/dasc/eclipse-pluins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
+          url="jar:file:W:/dasc/eclipse-tools-plugins/de.anbos.eclipse.logviewer.site-0.9.9-SNAPSHOT.zip!/"/>
     </setupTask>
   </setupTask>
   <setupTask
