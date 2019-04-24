@@ -1,2 +1,2 @@
 # org.opengda.eclipseide
-Eclipse IDE with all required plugins for GDA development
+Oomph setup files to create an Eclipse IDE with all required plugins for GDA development
