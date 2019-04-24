@@ -1,2 +1,2 @@
 # org.opengda.eclipseide
-Eclipse IDE for GDA development
+Eclipse IDE with all required plugins for GDA development
