@@ -170,8 +170,6 @@
     <repository
         url="http://pydev.org/updates"/>
     <repository
-        url="http://download.springsource.com/release/TOOLS/update/e4.14/"/>
-    <repository
         url="http://download.eclipse.org/egit/updates"/>
     <repository
         url="http://download.eclipse.org/egerrit/updates/release/967"/>
@@ -185,7 +183,27 @@
         url="http://download.eclipse.org/technology/dltk/updates-dev/latest/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
-   <setupTask
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      filter="(osgi.os=linux)"
+      name="Linux">
+    <setupTask
+        xsi:type="setup.p2:P2Task">
+      <repository
+          url="jar:file:/dls_sw/dasc/eclipse-tools-plugins/springsource-tool-suite-3.9.11.RELEASE-e4.14.0-updatesite.zip!/"/>
+    </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      filter="(osgi.os=win32)"
+      name="Windows">
+    <setupTask
+        xsi:type="setup.p2:P2Task">
+      <repository
+          url="jar:file:W:/dasc/eclipse-tools-plugins/springsource-tool-suite-3.9.11.RELEASE-e4.14.0-updatesite.zip!/"/>
+    </setupTask>
+  </setupTask>
+  <setupTask
       xsi:type="setup:CompoundTask"
       filter="(osgi.os=linux)"
       name="Linux">
