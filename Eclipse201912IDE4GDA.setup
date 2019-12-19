@@ -80,8 +80,6 @@
     <requirement
         name="org.eclipse.jgit.pgm.feature.group"/>
     <requirement
-        name="org.eclipse.jgit.pgm.source.feature.group"/>
-    <requirement
         name="org.eclipse.jgit.http.apache.feature.group"/>
     <requirement
         name="org.eclipse.jgit.feature.group"/>
