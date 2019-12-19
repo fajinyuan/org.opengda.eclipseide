@@ -58,8 +58,6 @@
     <requirement
         name="org.springsource.ide.eclipse.dashboard.feature.group"/>
     <requirement
-        name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
-    <requirement
         name="org.springframework.ide.eclipse.mylyn.feature.feature.group"/>
     <requirement
         name="org.springframework.ide.eclipse.feature.feature.group"/>
