@@ -180,7 +180,7 @@
     <repository
         url="http://download.eclipse.org/releases/2019-12/"/>
     <repository
-        url="http://download.eclipse.org/eclipse/updates/4.12/"/>
+        url="http://download.eclipse.org/eclipse/updates/4.14/"/>
     <repository
         url="http://download.eclipse.org/technology/dltk/updates-dev/latest/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
@@ -227,8 +227,8 @@
   </setupTask>
   <setupTask
       xsi:type="git:GitCloneTask"
-      id="git.clone.eclipse4GDA.location"
-      remoteURI="fajinyuan/org.opengda.eclipseide.git">
+      id="git.clone.ide4gda"
+      remoteURI="fajinyuan/org.opengda.eclipseide">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
@@ -256,7 +256,7 @@
       <requirement
           name="*"/>
       <sourceLocator
-          rootFolder="${git.clone.eclipse4GDA.location}"
+          rootFolder="${git.clone.ide4gda.location}"
           locateNestedProjects="true"/>
       <repositoryList
           name="Photon">
@@ -314,7 +314,7 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         option="-Doomph.redirection.ide4gda"
-        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//EclipsePhotonIDE4GDA.setup->${git.clone.eclipse4GDA.location|uri}//EclipsePhotonIDE4GDA.setup"
+        value="=https://raw.githubusercontent.com/fajinyuan/org.opengda.eclipseide.git/master//Eclipse201912IDE4GDA.setup->${git.clone.ide4gda.location|uri}//Eclipse201912IDE4GDA.setup"
         vm="true">
       <description>Set an Oomph redirection system property to redirect the logical location of this setup to its physical location in the Git clone.</description>
     </setupTask>
@@ -323,7 +323,7 @@
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
   <description>
-    ide4gda provides an Eclipse Photon-based IDE for GDA development.
+    ide4gda provides an Eclipse IDE for GDA development.
     It contains a list of extra plugins required for GDA development using eclipse RCP IDE
   </description>
 </setup:Project>
